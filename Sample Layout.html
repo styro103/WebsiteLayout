@@ -4,19 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sample Layout</title>
 <style type="text/css">
-/*
-html, body 
+html, body /* Fit page to screen size */ 
 {
 	width: 100%; 
 	height: 100%;
 }
-*/
 * 
 {
 	margin: 0;
 	padding: 0;
 }
-a 
+a /* Change Default Link Settings */ 
 {
   color: black;
   text-decoration: none; /* no underline */
@@ -27,6 +25,7 @@ a:hover
      text-decoration:none; 
      cursor:pointer;  
 }
+/* Not Used
 #Container
 {
 	width: 100%; 
@@ -34,25 +33,27 @@ a:hover
 	border: 1px solid #000000;
 	overflow: auto;
 }
-#Header
+*/
+#Header /* For Top of Page, Normally Used for Title */
 {
 	height: 15%;
 	/*width: 100%*/
+	position: relative;
 }
-#Nav
+#Nav /* Container for Left Side of Page, Normally Used for Navigation */
 {
 	float: left;
 	height: 65%;
 	width: 20%;
 }
-#Content
+#Content /* Container for Middle of Page, Normally Used for Page Content */
 {
 	float: left;
 	clear: right;
 	height: 65%;
 	width: 80%;
 }
-#Footer
+#Footer /* Container for Bottom of Page, Normally Used for Logos, Signature, etc. */
 {
 	clear: both;
 	height: 20%;
@@ -61,18 +62,18 @@ a:hover
 </head>
 <body>
 <!--<div id="Container">-->
-	<div id="Header">
+	<div id="Header"> <!--Place Header at Top-->
     	<p align="center">Header</p>
   	</div>
-    <div id="Nav">
+    <div id="Nav"> <!--Place Nav at Left, But Under Top-->
     	<p align="center">Nav</p>
     </div>
-    <div id="Content">
-    	<div id="Con">
+    <div id="Content"> <!--Place Content Right Of Nav, Under Header-->
+    	<div id="Con"> <!--Might Want to Further Split Content Panel-->
         	<p align="center">Content</p>
         </div>
     </div>
-    <div id="Footer">
+    <div id="Footer"> <!--Place Footer at Bottom, Under Everything-->
     	<div align="center">Footer </div>
   </div>
 <!--</div>-->
